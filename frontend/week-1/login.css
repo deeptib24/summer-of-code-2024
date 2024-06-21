@@ -327,14 +327,18 @@ button:hover {
 
 @media (max-width:360px) {
     .loginbox {
-        /* width: 100vw; */
-        /* height: 100vh; */
+        width: 100vw;
+        height: 100vh;
         border: none;
         border-radius: 0;
+        margin-bottom: 15px;
     }
-
+    .logo{
+        margin-top: 12px;
+    }
     .deets {
         width: 290px;
+        padding: 2px;
     }
 }
 

@@ -211,7 +211,7 @@ ul .items {
     position: relative;
     font-family: "Poppins", "segui";
     width: 490px;
-    height: 500px;
+    height: 75vh;
     background: transparent;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(194, 192, 192, 0.315);
@@ -225,38 +225,18 @@ ul .items {
 }
 
 .logo {
-    /* justify-self: center;
-    margin-left: 100px; */
-    text-align: center;
+     justify-self: center;
+    /* margin-left: 100px; */
+     text-align: center;
 }
 
 
-.logo img {
+ .logo img {
     width: 100px;
     border-radius: 15px;
+ }
 
-}
 
-.deets input {
-    width: 250px;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-    /* margin-left: 5px; */
-}
-
-.deets {
-    width: 300px;
-    /* text-align: center; */
-}
-
-.deets .icon img {
-    /* width: 22px; */
-    height: 25px;
-    border: 2px;
-    /* margin: 2px; */
-
-}
 
 
 .down {
@@ -302,15 +282,9 @@ ul .items {
     border: none;
 }
 
-.sub button {
-    width: 250px;
-    height: 30px;
-    background-image: linear-gradient(to bottom, #5ec8ec 0%, #061456 100%);
-    color: white;
-    border: none;
-    border-radius: 7px;
-    margin-left: 30px;
-
+button{
+    width: 80px;
+    height: 20px;
 }
 
 button:hover {

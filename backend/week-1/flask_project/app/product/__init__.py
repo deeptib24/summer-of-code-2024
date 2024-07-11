@@ -1,8 +1,9 @@
+# app/__init__.py
+
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from config import Config
-from .models import db, Product
-from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 migrate = Migrate()
@@ -12,7 +13,10 @@ def create_app():
     app.config.from_object(Config)
 
     db.init_app(app)
-    migrate = Migrate(app, db)
+    migrate.init_app(app, db)
+
+    from app.product.views import product_bp
+    app.register_blueprint(product_bp, url_prefix='/api')
 
     with app.app_context():
         db.create_all()

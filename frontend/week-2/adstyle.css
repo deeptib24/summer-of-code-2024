@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(171, 236, 214);
+}
+nav{
+    background-color: rgb(61, 135, 135);
+    color: white;
+}
+img{
+    margin: 3px;
+    border-radius: 8px;
+}
